@@ -12,7 +12,48 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+    <style>
+      @media (max-width: 768px) {
+            .carousel-item img {
+                height: auto;
+                max-height: 300px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Adjust cards layout for mobile */
+        @media (max-width: 576px) {
+            .row .col-6, .row .col-3, .row .col-4 {
+                width: 100%;
+            }
+
+            .card img {
+                height: auto;
+                max-height: 200px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .text-center h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+  </head>
 <body>
     
     <!-- Nav bar -->
